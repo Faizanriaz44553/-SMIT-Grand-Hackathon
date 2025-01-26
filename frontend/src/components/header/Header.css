@@ -1,0 +1,47 @@
+
+  .mainDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-medium);
+    background-color: var(--secondary-color);
+    box-shadow: var(--shadow-light);
+  }
+  
+  .logoDiv {
+    flex: 1;
+  }
+  
+  .logoImage {
+    height: 50px;
+    width: auto;
+  }
+  
+  .navDiv {
+    flex: 2;
+  }
+  
+  .linkUl {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navItem {
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .navItem:hover {
+    color: var(--text-color);
+  }
+  
+  .extraDiv {
+    flex: 1;
+  }
+  

@@ -1,0 +1,168 @@
+
+  .mainWrapper{
+    background-color: #f5f5f5;
+    padding: 10px;
+  }
+  .mainHeaderDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  .welcomeDiv {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .welcomeDiv h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .introText {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .descriptionText {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .closingText {
+    font-size: 1.1rem;
+    color: #333;
+    font-style: italic;
+  }
+  
+  /* Image Section */
+  .imageDiv {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .headerImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Mission Container */
+.missionContainer {
+    background: var(--primary-color);
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+  }
+  
+  .missionContentWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .missionText {
+    flex: 1;
+    color: #fff;
+    max-width: 45%;
+  }
+  
+  .missionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .missionDescription {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+  }
+  
+  .missionImageWrapper {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .missionImage {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .missionImage:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Keyframe Animation for Fade-in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .missionContentWrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .missionText {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .missionImageWrapper {
+      max-width: 100%;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mainHeaderDiv {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .imageDiv {
+      margin-top: 20px;
+    }
+    .missionSection {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .missionImage {
+        margin-top: 20px;
+      }
+  }
+  

@@ -1,0 +1,96 @@
+/* General Footer Styling */
+.footer {
+    background-color: #333; /* Light black background */
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footerSection {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+  
+  .footerTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .footerSection p, .footerSection ul {
+    color: #ddd;
+    font-size: 1rem;
+  }
+  
+  .footerSection ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerSection ul li {
+    margin: 8px 0;
+  }
+  
+  .footerSection ul li a {
+    color: #ddd;
+    text-decoration: none;
+  }
+  
+  .footerSection ul li a:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+  }
+  
+  /* Social Icons */
+  .socialIcons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .socialIcon {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .socialIcon:hover {
+    background-color: #00aced; /* Twitter blue */
+  }
+  
+  /* Footer Bottom */
+  .footerBottom {
+    background-color: #222;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+  }
+  
+  .footerBottom p {
+    color: #bbb;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .footerContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footerSection {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+
+:root {
+  --primary-color: #0067ac; /* Sylani blue */
+  --secondary-color: #ffffff; /* White */
+  --text-color: #333333; /* Dark text */
+  --border-radius: 8px; /* Rounded corners */
+  --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --font-family: Arial, sans-serif;
+}
+
+
