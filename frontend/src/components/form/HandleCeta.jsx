@@ -1,12 +1,12 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './Form.css';
-import Header from '../header/Header';
 import { useForm } from 'react-hook-form';
 import instance from '../../api/axios';
 
 const HandleCeta = () => {
   const { subcategory } = useParams();
+  const navigate = useNavigate()
 
   const {
     register,
@@ -18,6 +18,7 @@ const HandleCeta = () => {
     try {
       const response = await instance.post('/loanAdd', data);
       console.log(response);
+      navigate("/signup")
     } catch (error) {
       console.error('Error:', error.message);
     }
@@ -35,7 +36,6 @@ const HandleCeta = () => {
         </p>
 
         <form onSubmit={handleSubmit(onSubmit)} className="category-form">
-          {/* Loan Amount Field */}
           <div className="form-group">
             <label htmlFor="amount">Loan Amount</label>
             <input
@@ -55,8 +55,6 @@ const HandleCeta = () => {
               <span className="error-message">{errors.amount.message}</span>
             )}
           </div>
-
-          {/* Loan Type Field */}
           <div className="form-group">
             <label htmlFor="laon">Loan Type</label>
             <input
@@ -77,7 +75,6 @@ const HandleCeta = () => {
             )}
           </div>
 
-          {/* Repayment Days Field */}
           <div className="form-group">
             <label htmlFor="repaymentDays">Repayment Period (in days)</label>
             <input
@@ -106,7 +103,6 @@ const HandleCeta = () => {
             )}
           </div>
 
-          {/* Submit Button */}
           <button type="submit" className="submit-button">
             Submit
           </button>
