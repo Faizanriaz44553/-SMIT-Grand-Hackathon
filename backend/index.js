@@ -1,10 +1,8 @@
 import express from 'express';
-// import taskRoutes from './routes/tasks/taskRoutes.js';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import dbConnection from './db/dbConnection.js';
-import loanadd from './controller/loanData/LoanData.js';
-import authenticateUser from './controller/authcontroler/authController.js';
+import loanRoutes from './routes/loanRoutes.js';
 
 
 
@@ -26,8 +24,8 @@ app.get('/', (req, res) => {
     res.send("welcome")
 })
 
-app.use('/api' , loanadd)
-app.use('/api/auth' , authenticateUser)
+app.use('/api' , loanRoutes)
+
 // routes 
 // app.use('/tasks', taskRoutes);
 

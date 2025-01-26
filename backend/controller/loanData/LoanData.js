@@ -1,12 +1,8 @@
-import express from 'express'
 import loanModel from '../../models/schema.js';
 
 
-const loanadd = express.Router()
 
-
-
-loanadd.post('/loanAdd' ,async (req , res)=>{
+const LoanAddController = async (req , res)=>{
     try {
         const {amount , laon , paydate} = req.body;
 
@@ -19,7 +15,7 @@ loanadd.post('/loanAdd' ,async (req , res)=>{
     } catch (error) {
         res.status(500).send({ status: 500, massage: "server error", data: error });
     }
-})
+}
 
 
-export default loanadd
+export default LoanAddController
