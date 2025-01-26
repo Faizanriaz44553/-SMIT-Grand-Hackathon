@@ -13,7 +13,7 @@ const Signup = () => {
   const onSubmit = async (data) => {
     try {
       console.log("Data being sent:", data); 
-      const response = await instance.post("/auth/signup", data); 
+      const response = await instance.post("/signup", data); 
       console.log("Signup successful:", response);
     } catch (error) {
       console.error("Signup error:", error.response?.data || error.message);
